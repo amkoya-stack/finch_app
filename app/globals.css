@@ -101,7 +101,7 @@ p {
 }
 
 .cont-1 {
-  padding-top: 120px;
+  padding-top: 70px;
 }
 
 .title-form {
@@ -112,6 +112,12 @@ p {
   text-align: center;
   justify-content: space-between;
   margin: auto;
+}
+
+.btn-2 {
+  background: #6d6d6d;
+  border-style: dashed;
+  border-color: #36454F;
 }
 
 .content2 {
@@ -132,7 +138,7 @@ p {
   padding: 0px 0px 8px;
   margin: 24px 0px;
   color: #f7f8f8;
-  max-width: 90%;
+  max-width: 95%;
   margin: auto;
 }
 
@@ -153,7 +159,8 @@ p {
 }
 
 .hr-line {
-  border-width: 1px solid text-gray-500;
+  border-color: #36454F;
+  height: 0px;
 }
 
 /* Header */
@@ -193,10 +200,18 @@ nav li {
 }
 
 /* Footer */
-footer {
-  background-color: #333;
+/* .footer {
+  background-color: inherit;
   color: #fff;
-  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: auto;
+} */
+
+.footer p {
+  font-size: 12px;
+  color: #b4bcd0;
 }
 
 /* Responsive Design */
