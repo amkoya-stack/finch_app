@@ -15,6 +15,7 @@ const Navbar = () => {
     {
       id: 2,
       link: "about",
+      href: "/about"
     },
     // {
     //   id: 3,
@@ -23,10 +24,12 @@ const Navbar = () => {
     {
       id: 4,
       link: "sign in",
+      href: "/sign-in",
     },
     {
       id: 5,
       link: "sign up",
+      href: "/sign-up",
     },
   ];
 
@@ -37,9 +40,9 @@ const Navbar = () => {
         <h1 className="text-xl font-signature ml-2">
           <a
             className="link-underline link-underline-black"
-            href=""
-            target="_blank"
-            rel="noreferrer"
+            href="/"
+            // target="_blank"
+            // rel="noreferrer"
           >
             FINCH
           </a>
@@ -47,7 +50,7 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, href }) => (
           <li
             key={id}
             className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
@@ -66,7 +69,7 @@ const Navbar = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, }) => (
             <li
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
